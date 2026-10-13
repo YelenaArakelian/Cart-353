@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #bcb7a5;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Bedroom background */
+#bedroom {
+  position: relative;
+  width: min(100vw, 177.78vh);
+  aspect-ratio: 16 / 9;
+
+  background-image: url("assets/background/Draft.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#photo {
+  position: absolute;
+  width: 9%;
+  left: 30%;
+  top: 52%;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#photo:hover {
+  filter: drop-shadow(0 0 15px #ffdc95);
+  transform: scale(1.1);
+}
+
+/* Memory message */
+#memory {
+  display: none;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+
+  color: white;
+  background: #242438dd;
+  padding: 12px;
+  border-radius: 8px;
+}
